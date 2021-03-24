@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Coda"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker"
+    />
+  </head>
+  <body>
+    
+    <section class="memory-game">
+      <div class="memory-card" data-framework="aurelia">
+        <img class="front-face" src="img/image-2.png" alt="Aurelia" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+      <div class="memory-card" data-framework="aurelia">
+        <img class="front-face" src="img/image-2.png" alt="Aurelia" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+
+      <div class="memory-card" data-framework="vue">
+        <img class="front-face" src="img/image-3.png" alt="Vue" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+      <div class="memory-card" data-framework="vue">
+        <img class="front-face" src="img/image-3.png" alt="Vue" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-timer" id="app"></div>
+        <img class="logo-face" src="img/logo.png" alt="Logo Samaneh Vajdi" />
+      </div>
+      <div class="memory-card" data-framework="backbone">
+        <img class="front-face" src="img/map.png" alt="Backbone" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+
+      <div class="memory-card" data-framework="ember">
+        <img class="front-face" src="img/image-1.png" alt="perspolice" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+      <div class="memory-card" data-framework="ember">
+        <img class="front-face" src="img/image-1.png" alt="perspolice" />
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+
+      <div class="memory-card" data-framework="backbone">
+        <img class="front-face" src="img/map.png" alt="Backbone" />
+
+        <img class="back-face" src="img/back.png" alt="back" />
+      </div>
+    </section>
+
+    <section class="score-panel">
+      <span class="moves">0</span> Move(s)
+
+      <div class="restart" onclick="startGame()">
+        <i class="fa fa-repeat"></i>
+      </div>
+    </section>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+          <h2>Congratulations</h2>
+          
+          <div class="content-1">
+              You Win
+          </div>
+          <button id="play-again"onclick="playAgain()">
+              Play again</a>
+          </button>
+      </div>
+  </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
